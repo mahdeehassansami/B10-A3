@@ -1,11 +1,277 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
+<html lang="en" data-theme="cupcake">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Azeret+Mono:ital,wght@0,100..900;1,100..900&family=Manrope:wght@200..800&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/c20b914534.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.14/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: "#ABEF5F",
+            },
+            fontFamily: {
+              sans: ["Manrope", "sans"],
+            },
+          },
+        },
+      };
+    </script>
+    <title>Rinterio</title>
+  </head>
+
+  <body>
+    <header>
+      <!-- navbar section -->
+      <section class="manrope">
+        <div class="navbar bg-base-100 max-w-7xl mx-auto">
+          <div class="navbar-start">
+            <div class="dropdown">
+              <ul
+                tabindex="0"
+                class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
+              >
+                <li class="font-bold"><a>Home</a></li>
+                <li><a>Services</a></li>
+                <li><a>portfolio</a></li>
+                <li><a>Blogs</a></li>
+                <li><a>Contact Us</a></li>
+              </ul>
+            </div>
+            <a class="text-3xl font-extrabold flex gap-2 items-center">
+              <div class="bg-primary rounded-full p-2">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="14"
+                  height="14"
+                  viewBox="0 0 14 14"
+                  fill="none"
+                  class="size-4"
+                >
+                  <path
+                    d="M12.007 2.05932L1.0033 13.0557"
+                    stroke="#1C1C1C"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                  />
+                  <path
+                    d="M6.00728 1.18866C6.00728 1.18866 11.6409 0.715645 12.4957 1.57084C13.3503 2.42604 12.8734 8.05944 12.8734 8.05944"
+                    stroke="#1C1C1C"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+              <span> Rinterio </span>
+            </a>
+          </div>
+          <div class="navbar-center hidden lg:flex">
+            <ul class="menu menu-horizontal px-1">
+              <li class="font-bold"><a>Home</a></li>
+              <li><a>Services</a></li>
+              <li><a>portfolio</a></li>
+              <li><a>Blogs</a></li>
+              <li><a>Contact Us</a></li>
+            </ul>
+          </div>
+          <div class="navbar-end">
+            <a class="btn bg-[#ABEF5F]">Book Consult</a>
+            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h8m-8 6h16"
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
+      </section>
+    </header>
+    <main>
+      <!-- Banner section -->
+      <section class="flex flex-col items-center gap-8 text-center px-4">
+        <img src="assets/banner.png" alt="" />
+        <h1
+          class="font-extrabold lg:text-[4rem] sm:text-[2rem] leading-tight max-w-7xl mx-auto"
+        >
+          An Apartment Complex of this design has a striking appearance
+        </h1>
+        <p class="max-w-7xl mx-auto">
+          If you want to design you dream home, Our designing team will assist
+          you in making it a reality by giving you the best designs.Only your
+          imgination is your limit.
+        </p>
+        <button
+          class="btn bg-primary/50 font-bold border-2 border-primary w-full md:w-auto"
+        >
+          <span> View Details </span>
+          <div class="bg-primary rounded-full p-2">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="14"
+              height="14"
+              viewBox="0 0 14 14"
+              fill="none"
+              class="size-4"
+            >
+              <path
+                d="M12.007 2.05932L1.0033 13.0557"
+                stroke="#1C1C1C"
+                stroke-width="1.5"
+                stroke-linecap="round"
+              />
+              <path
+                d="M6.00728 1.18866C6.00728 1.18866 11.6409 0.715645 12.4957 1.57084C13.3503 2.42604 12.8734 8.05944 12.8734 8.05944"
+                stroke="#1C1C1C"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </div>
+        </button>
+      </section>
+      <!-- We Design Section -->
+      <section class="bg-stone-100 py-20 space-y-16">
+        <div class="flex gap-6 max-w-7xl mx-auto">
+          <div class="flex-1 space-y-6">
+            <div
+              class="inline-flex gap-2 bg-white rounded-full items-center px-3 py-1.5 font-bold relative"
+            >
+              <img
+                class="absolute -top-12 right-10"
+                src="assets/Vector.png"
+                alt=""
+              />
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                strokeWidth="{1.5}"
+                stroke="currentColor"
+                class="size-5"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"
+                />
+              </svg>
+              <h3 class="">About Us</h3>
+            </div>
+            <h3 class="font-extrabold text-5xl leading-normal">
+              We design thoughtful, liveable spaces
+            </h3>
+            <p>
+              The barn house captivates with its blend of rustic charm and
+              modern sophistication, featuring weathered wood, sleek metal
+              accents.
+            </p>
+            <div class="bg-white rounded-xl flex gap-6 p-6">
+              <img src="assets/commercial.png" alt="" />
+              <div>
+                <h3 class="font-bold text-xl">Commercial</h3>
+                <p class="text-gray-600 max-w-[75%]">
+                  The barn house captivates with its blend of rustic charm and
+                  modern
+                </p>
+              </div>
+            </div>
+            <div class="bg-white rounded-xl flex gap-6 p-6">
+              <img src="assets/residential.png" alt="" />
+              <div>
+                <h3 class="font-bold text-xl">Residential</h3>
+                <p class="text-gray-600 max-w-[75%]">
+                  The barn house captivates with its blend of rustic charm and
+                  modern
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="flex-1">
+            <img src="assets/Rectangle.png" alt="" />
+        </div>
+    </div>
+    <div class="space-y-4">
+    <div class="flex justify-center">
+        <div class="bg-white rounded-full inline-flex px-4 py-2 items-center gap-2 font-semibold">
+            <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            strokeWidth="{1.5}"
+            stroke="currentColor"
+            class="size-5"
+            >
+            <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"
+            />
+        </svg>
+        <h3>How we work</h3>
+    </div>
+</div>
+<div class="space-y-10">
+
+    <div class="text-center">
+        <h3 class="font-extrabold text-5xl">Our Work Process</h3>
+        <p class="text-gray-500">Here is the total process that we follow to make amazing designs for you</p>
+        
+    </div>
+    <div class="flex max-w-7xl m-auto gap-6">
+        <div class="bg-pink-300/50 rounded-xl flex-1 px-8 py-4 space-y-3">
+            <img src="assets/concept.png" alt="">
+            <h3 class="font-bold text-xl">Concept</h3>
+            <p class="">Firstly We work with the concept which the design will be based.</p>
+        </div>
+        <div class="bg-yellow-400/50 rounded-xl flex-1 px-8 py-4 space-y-3">
+            <img src="assets/flow-chart.png" alt="">
+            <h3 class="font-bold text-xl">Design</h3>
+            <p class="">We then go to the designing board and get the first protoype of the design ready.</p>
+        </div>
+        <div class="bg-[#A4DAC3] rounded-xl flex-1 px-8 py-4 space-y-3">
+            <img src="assets/vision.png" alt="">
+            <h3 class="font-bold text-xl">Supervision</h3>
+            <p class="">Every part of our working process is keenly observed and guided by Expert Supervisors.</p>
+        </div>
+        <div class="bg-[#77AAEA] rounded-xl flex-1 px-8 py-4 space-y-3">
+            <img src="assets/budget-planning.png" alt="">
+            <h3 class="font-bold text-xl">Budget Planning</h3>
+            <p class="">We also put emphasis on budget so that our designs do not break your bank.</p>
+        </div>
+    </div>
+</div>
+</div>
+</section>
+</main>
+<footer></footer>
 </body>
 </html>
